@@ -1,0 +1,7 @@
+.TaskForm-text-input {
+    padding: 0.5em;
+    border: 2px solid rgb(207, 207, 207);
+    background-color: rgba(252, 214, 214, 0.466);
+    border-radius: 3px;
+    max-width: 20em;
+}

@@ -1,16 +1,22 @@
 import React from 'react';
 import './App.css';
-import TaskItems from './TaskItems.js';
+import Logo from './logo512.png';
+import TaskList from './TaskList';
+import TaskForm from './TaskForm';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Bill's Amazing Productivity App</p>
+        <p>
+          <img className="App-logo" src={Logo} alt="Logo" />
+          Bill's Amazing Productivity App
+          <img className="App-logo" src={Logo} alt="Logo" />
+        </p>
       </header>
       <body className="App-body">
-        <h2>Here be content:</h2>
-        <TaskItems />
+        <TaskForm />
+        <TaskList />
         </body>
       <footer className="App-footer">Here will be foooter stuff.</footer>
     </div>
