@@ -1,16 +1,20 @@
-import React from 'react';
+import React, {useState, useContext} from 'react';
 import './TaskList.css';
 import TaskItem from './TaskItem'
+import {TaskContext} from './TaskContext';
 
+function sortDate(a, b) {
+  return a.dueDate < b.dueDate;
+}
 
-function TaskList() {
+function TaskList(props) {
+  const [tasks, setTasks] = useContext(TaskContext);
+  
   return (
     <div className="TaskList-container">
-        <TaskItem task="Some content" />
-        <TaskItem task="Other content" />
-        <TaskItem task="A third type of content" />
-        <TaskItem task="Yet more content for your fat head." />
-        <TaskItem task="How can you possibly consume any more content you unbelievable monster." />
+        {tasks.sort(sortDate).map(task => (
+          <TaskItem name={task.name} dueDate={task.dueDate} description={task.description} />
+        ))}
     </div>
   );
 }

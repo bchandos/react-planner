@@ -3,6 +3,7 @@ import './App.css';
 import Logo from './logo512.png';
 import TaskList from './TaskList';
 import TaskForm from './TaskForm';
+import {TaskProvider} from './TaskContext';
 
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
         </p>
       </header>
       <body className="App-body">
-        <TaskForm />
-        <TaskList />
+        <TaskProvider>
+          <TaskForm />
+          <TaskList />
+        </TaskProvider>
         </body>
       <footer className="App-footer">Here will be foooter stuff.</footer>
     </div>
