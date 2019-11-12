@@ -3,17 +3,17 @@ import React, {useState, createContext} from 'react';
 export const TaskContext = createContext();
 
 
-export const TaskProvider = props => {
+function TaskProvider(props) {
     const [tasks, setTasks] = useState([
         {
-            name: 'Some fucking shit you gotta do',
-            dueDate: '2020/01/01',
-            description: 'Just endless amounts of garbage in your life that you are obligated to do'
+            name: 'Really Important Thing',
+            dueDate: '2019-12-01',
+            description: 'You must do this important thing in a reasonable amount of time.'
         },
         {
-            name: 'More shit, different day',
-            dueDate: '1999/11/22',
-            description: 'Mountains of horse shit.'
+            name: 'Very Important Thing',
+            dueDate: '2020-01-22',
+            description: 'You must also do this important thing in a slightly less reasonable amount of time.'
         }
     ]);
     return(
@@ -22,3 +22,5 @@ export const TaskProvider = props => {
         </TaskContext.Provider>
     )
 }
+
+export default TaskProvider;

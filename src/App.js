@@ -3,7 +3,7 @@ import './App.css';
 import Logo from './logo512.png';
 import TaskList from './TaskList';
 import TaskForm from './TaskForm';
-import {TaskProvider} from './TaskContext';
+import TaskProvider from './TaskContext';
 
 function App() {
   return (

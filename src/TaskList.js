@@ -4,7 +4,7 @@ import TaskItem from './TaskItem'
 import {TaskContext} from './TaskContext';
 
 function sortDate(a, b) {
-  return a.dueDate < b.dueDate;
+  return a.dueDate > b.dueDate;
 }
 
 function TaskList(props) {
