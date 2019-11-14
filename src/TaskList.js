@@ -13,7 +13,7 @@ function TaskList(props) {
   return (
     <div className="TaskList-container">
         {tasks.sort(sortDate).map(task => (
-          <TaskItem name={task.name} dueDate={task.dueDate} description={task.description} />
+          <TaskItem name={task.name} dueDate={task.dueDate} description={task.description} completed={task.completed}/>
         ))}
     </div>
   );

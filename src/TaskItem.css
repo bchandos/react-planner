@@ -14,3 +14,11 @@
   .TaskItem-item h3 {
     margin: 0.5em;
   }
+  .TaskItem-button {
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    border-radius: 3px;
+  }
+  .TaskItem-completed {
+    text-decoration: line-through;
+  }
