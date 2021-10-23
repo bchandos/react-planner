@@ -22,7 +22,7 @@ function TaskForm() {
         // a task must have at least a name
         if (name) {
             // set tasks by appending new item to copy of previous items
-            setTasks(prevTasks => [...prevTasks, {name: name, dueDate: dueDate, description: description}]);
+            setTasks(prevTasks => [...prevTasks, {id: tasks.length + 1, name: name, dueDate: dueDate, description: description}]);
             // clear form field values
             setName('');
             setDescription('');
@@ -36,7 +36,7 @@ function TaskForm() {
             <form className="TaskForm-form" onSubmit={addTask}>
                 <input className="TaskForm-text-input" type="text" name="newTaskName" value={name} onChange={updateName} />
                 <input className="TaskForm-date-input" type="date" name="newTaskDueDate" value={dueDate} onChange={updateDueDate} />
-                <input className="TaskForm-text-input" type="textarea" name="newTaskDescription" value={description} onChange={updateDescription} /> 
+                <textarea className="TaskForm-text-textarea" name="newTaskDescription" value={description} onChange={updateDescription}></textarea>
                 <button className="TaskForm-button" disabled={!name} type="submit" name="newTaskButton">Add</button>
             </form>
         </div>

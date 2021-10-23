@@ -12,7 +12,7 @@ function App() {
         <p>
           <img className="App-logo" src={Logo} alt="Logo" />
           Bill's Amazing Productivity App
-          <img className="App-logo" src={Logo} alt="Logo" />
+          <img className="App-logo-flipped" src={Logo} alt="Logo" />
         </p>
       </header>
       <body className="App-body">

@@ -6,12 +6,14 @@ export const TaskContext = createContext();
 function TaskProvider(props) {
     const [tasks, setTasks] = useState([
         {
+            id: 1,
             name: 'Really Important Thing',
             dueDate: '2019-12-01',
             description: 'You must do this important thing in a reasonable amount of time.',
             completed: false
         },
         {
+            id: 2,
             name: 'Very Important Thing',
             dueDate: '2020-01-22',
             description: 'You must also do this important thing in a slightly less reasonable amount of time.',

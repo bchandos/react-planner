@@ -17,7 +17,10 @@
   .TaskItem-button {
     padding: 0.5em 1em;
     margin: 0.5em;
-    border-radius: 3px;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: tomato;
+    border-radius: 5px;
   }
   .TaskItem-completed {
     text-decoration: line-through;
